@@ -87,13 +87,14 @@
                         <button class="cart_remove" @click="removeItemCart(index)">X</button>
                     </li>
                 </ul>
+                
                   <p class="cart_total">{{cartTotal | numPrice}}</p>
-                 <div class="cart_buttons"> 
-                 <button class="clear_cart" @click='clearCart'>Clear Cart</button>
-                  <button class="cart_checkout">Checkout</button>
-                 <div> 
+                    <div class="cart_buttons"> 
+                        <button class="clear_cart" @click='clearCart'>Clear Cart</button>
+                        <button class="cart_checkout">Checkout</button>
+                    </div>        
               </div>
-              <p v-else>The cart is empty.</p>
+            <p v-else>The cart is empty.</p>    
         </div>
       </section>
 
